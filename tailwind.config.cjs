@@ -10,7 +10,7 @@ module.exports = {
         270: '270deg'
       },
       backgroundImage: {
-        'hero-pattern': "url('/public/paloma_infinity_shot.avif')"
+        'hero-pattern': "url('/public/paloma-infinity.png')"
       }
     }
   },
