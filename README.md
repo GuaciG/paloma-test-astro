@@ -1,16 +1,20 @@
-# Astro Starter Kit: Basics
+# Test for Agile Pixel - Paloma - Astro + Tailwindcss
+
+![Paloma Test for Agile Pixel](https://res.cloudinary.com/drpcjt13x/image/upload/v1689720229/Proyectos/Paloma%20Test%20-%20Agile%20Pixel/paloma-test-astro_gt6ybl.jpg)
+
+## 💻 Astro Starter Kit: Basics
+
+Start by creating a new Astro project.
 
 ```
-npm create astro@latest -- --template basics
+npm create astro@latest
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Run the astro add command to install both tailwindcss and @astro/tailwind as well as generate a tailwind.config.cjs file.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+```
+npx astro add tailwind
+```
 
 ## 🚀 Project Structure
 
@@ -20,9 +24,12 @@ Inside of your Astro project, you'll see the following folders and files:
 /
 ├── public/
 │   └── favicon.svg
+|   └── paloma_infinity_shot.avif
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   └── Logo.astro
+|   |   └── MenuIcon.astro
+|   |   └── Navigation.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
@@ -51,4 +58,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [the documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
