@@ -1,0 +1,79 @@
+---
+import MenuIcon from './MenuIcon.astro'
+---
+
+<nav
+  id='navbar'
+  class='hidden absolute bg-gray-500 xl:bg-transparent px-6 right-0 top-15 h-screen w-full text-gray-600 z-20 transition-all transform xl:fixed xl:right-0 xl:top-0 xl:bottom-0 xl:flex xl:h-full xl:w-auto xl:z-20 xl:-rotate-90 xl:-translate-x-64 xl:translate-y-[8.75rem]'
+>
+  <div class='xl:hidden flex justify-end p-5'>
+    <button
+      class='xl:hidden block text-3xl font-bold text-gray-300'
+      id='close-btn'>&#9587;</button
+    >
+  </div>
+  <ul
+    class='h-[100%] text-gray-300 tracking-wider uppercase text-7xl xl:text-8xl [&>li>a]:inline-block'
+  >
+    <li>
+      <a href='#' class='transform hover:scale-75 transition duration-500'
+        >hear</a
+      >
+    </li>
+    <li>
+      <a href='#' class='transform hover:scale-75 transition duration-500'
+        >latest</a
+      >
+    </li>
+    <li>
+      <a href='#' class='transform hover:scale-75 transition duration-500'
+        >tour</a
+      >
+    </li>
+    <li>
+      <a href='#' class='transform hover:scale-75 transition duration-500'
+        >see</a
+      >
+    </li>
+    <li>
+      <a href='#' class='transform hover:scale-75 transition duration-500'
+        >shop</a
+      >
+    </li>
+    <li>
+      <a href='#' class='transform hover:scale-75 transition duration-500'
+        >watch</a
+      >
+    </li>
+    <li>
+      <a href='#' class='transform hover:scale-75 transition duration-500'
+        >personal</a
+      >
+    </li>
+    <li>
+      <a href='#' class='transform hover:scale-75 transition duration-500'
+        >aid</a
+      >
+    </li>
+  </ul>
+</nav>
+<button class='xl:hidden block absolute top-4 right-4 text-gray-300 p-3'>
+  <a href='#' id='menu-btn'><MenuIcon /></a>
+</button>
+
+<script>
+  const navbar = document.querySelector('#navbar') as HTMLElement
+  const menuBtn = document.querySelector('#menu-btn') as HTMLElement
+  const closeBtn = document.querySelector('#close-btn') as HTMLElement
+
+  menuBtn.addEventListener('click', () => {
+    navbar.classList.toggle('hidden')
+    closeBtn.style.display = 'block'
+    menuBtn.classList.toggle('hidden')
+  })
+
+  closeBtn.addEventListener('click', () => {
+    navbar.classList.toggle('hidden')
+    menuBtn.classList.toggle('hidden')
+  })
+</script>
