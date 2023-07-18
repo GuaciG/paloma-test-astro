@@ -8,10 +8,10 @@ module.exports = {
     extend: {
       rotate: {
         270: '270deg'
-      }
-      /* backgroundImage: {
+      },
+      backgroundImage: {
         'hero-pattern': "url('/public/paloma_infinity_shot.avif')"
-      } */
+      }
     }
   },
   plugins: []
